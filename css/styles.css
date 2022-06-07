@@ -1,0 +1,185 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: white;
+}
+
+h2 {
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.colored-section {
+  background-color: #ff4c68;
+}
+
+.white-section {
+  background-color: white;
+}
+
+/* title section  */
+
+/*css combination selector pay attention*/
+#title .container-fluid {
+  text-align: left;
+  padding: 3% 15%;
+}
+
+/* navbar */
+.navbar {
+  padding-bottom: 7%;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem; /*rem is relative to root element*/
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* title */
+.download-button {
+  margin: 1rem 1rem 1rem 0;
+}
+
+.title-img-div {
+  position: relative;
+}
+
+.title-img {
+  transform: rotate(25deg);
+  width: 17rem;
+  position: absolute;
+  right: 30%;
+}
+
+/* features section */
+#features {
+  
+  position: relative;
+  /* z-index: 1; */
+}
+
+.fa-circle-check,
+.fa-bullseye,
+.fa-heart {
+  color: #ef8172;
+  font-size: 3.5rem;
+  margin: 5% auto;
+}
+
+.fa-circle-check:hover,
+.fa-bullseye:hover,
+.fa-heart:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials section */
+
+#testimonials {
+  background-color: #ef8172;
+  color: white;
+  
+}
+
+.carousel-item {
+  /* overflow: hidden; */
+  height: 550px;
+}
+
+.testimonial-image {
+  width: 7rem;
+  border-radius: 50%;
+  margin: 3%;
+}
+
+/* press Section */
+
+#press {
+  background-color: #ef8172;
+  padding: 1% 0 3%;
+}
+
+.press-logo {
+  width: 15rem; /*why 25% doesn't work to make 4 logos on the same line*/
+}
+
+
+/* pricing section */
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.btn-signup {
+  width: 100%;
+}
+
+/*is there a better way to line up the buttons?*/
+.btn-signup-1,
+.btn-signup-2 {
+  margin-top: 40px;
+}
+
+/* Call to Action section */
+
+.cta-title {
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
+  margin-bottom: 5%;
+  line-height: 1.5;
+}
+
+/* Footer Section */
+
+#footer .container-fluid {
+  padding: 5% 15%;
+}
+
+.ft-icon {
+  color: black;
+  margin: 1.2rem;
+}
+
+/*media screen*/
+
+@media (max-width: 990px) {
+  .title-img {
+    transform: rotate(0);
+    position: static;
+  }
+}
+
+/*choiec 1 : use media*/
+@media (min-width:990px) and (max-width:1200px) {
+  .title-img {
+    width: 270px;
+    /* position: static; */
+    right: 15%;
+    top: 5%
+  }
+}
