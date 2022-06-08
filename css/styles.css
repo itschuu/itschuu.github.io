@@ -172,6 +172,10 @@ p {
     transform: rotate(0);
     position: static;
   }
+
+  .press-logo {
+    width: 15%;
+  }
 }
 
 /*choiec 1 : use media*/
@@ -181,5 +185,9 @@ p {
     /* position: static; */
     right: 15%;
     top: 5%
+  }
+
+  .press-logo {
+    width: 20%;
   }
 }
